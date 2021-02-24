@@ -1,24 +1,42 @@
 @media only screen and (max-width: 800px) {
+
+    .bg{ 
+        background-image: url("festival.jpeg");
+        
+        background-attachment: fixed;
+        display: flex;
+          flex-direction: column;
+          
+        }
+
    .header{background-color: black; 
-    color: white;
-}
+    color: white;}
 
     .weareimd{
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            text-align: center;
-        }
+            text-align: center;}
 
    .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    text-align: center;}
+
+    .qr{width: 20%; 
+        padding-left:  40%;
+        padding-top:  10%;
+    
     }
+    
+    
 
-   
+  
+    
+    .text-date{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-   
-  }
-  .bg{ 
-    background-image: url("festival.jpeg");
-    background-attachment: fixed;
+    .text-one{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+    .text-price{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+    .text-grid{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
     
     
 }
