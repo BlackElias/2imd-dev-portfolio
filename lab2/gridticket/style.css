@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media  screen and (max-width: 800px) {
 
     .bg{ 
         background-image: url("festival.jpg");
@@ -47,3 +47,49 @@ font-size: 2rem;}
     
     
 }
+@media not screen and (max-width: 800px) {
+    .bg{ 
+        background-image: url("festival.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: grid;
+         
+        
+        
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr ;
+        grid-template-rows: 0.25fr 0.25fr 0.25fr  ;
+        }
+    
+    .header{ 
+    
+    grid-column-start: 1;
+    grid-column-end:4 ;
+    border-style: solid;
+    font-size: 3rem;}
+    
+    .weareimd{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;
+            }
+            
+    
+    .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;}
+    
+    .qrr{grid-column-start: 4; grid-column-end: 4;grid-row-start: 1; grid-row-end: 3; }
+    
+    .qr{width: 50%; 
+        padding-left:  20%;
+        padding-top:  -3%;
+        padding-bottom:  30%;
+        
+    }
+    
+    
+    
+    .text-date{font-family: 'Roboto', sans-serif; font-size: 2rem; padding: 12%; padding-left: 15%; border-style: solid;}
+    
+    .text-one{font-family: 'Roboto', sans-serif;font-size: 2rem; padding: 12%; padding-left: 20%; border-style: solid; text-align: center; padding: 12%; padding-left: 15%;}
+    
+    .text-price{font-family: 'Roboto', sans-serif; font-size: 2rem; grid-column-start: 3; border-style: solid; grid-column-end: 3; padding: 12%; padding-left: 15%; text-align: center;}
+    
+    .text-grid{font-family: 'Roboto', sans-serif; font-size: 2rem; grid-column-start: 1; border-style: solid; grid-column-end: 4; text-align: center;}
+    }
