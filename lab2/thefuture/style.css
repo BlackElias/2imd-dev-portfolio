@@ -1,0 +1,16 @@
+body{
+    padding: 2rem;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+   
+}
+
+.grid-container{
+display: grid;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+}
