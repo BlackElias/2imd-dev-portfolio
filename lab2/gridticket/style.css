@@ -12,35 +12,26 @@
         grid-template-rows: 0.5fr 1fr 0.20fr 0.20fr ;
         }
 
-   .header{background-color: black; 
-    color: white;
-    grid-column-start: 1;
-    grid-column-end: 3;
-padding-top: 10%;
-font-size: 2rem;}
+   .header{background-color: black;  color: white; grid-column-start: 1; grid-column-end: 3; padding-top: 10%; font-size: 9vw; letter-spacing: 20px; }
+
 
     .weareimd{
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             text-align: center;}
 
-   .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;}
-.qrr{grid-column-start: 1;
-    grid-column-end: 3;}
-    .qr{width: 60%; 
-        padding-left:  20%;
-        padding-top:  10%;
-        padding-bottom:  10%;
-        
-    }
+   .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;font-size: 7vw; letter-spacing: 0px }
+
+.qrr{grid-column-start: 1; grid-column-end: 3;}
+
+    .qr{width: 60%;  padding-left:  20%; padding-top:  10%; padding-bottom:  10%; }
     
 
     
-    .text-date{font-family: 'Roboto', sans-serif; font-size: 2rem; padding: 12%; padding-left: 35%; border-style: solid;}
+    .text-date{font-family: 'Roboto', sans-serif; font-size: 2rem; padding: 12%; padding-left: 35%; border-style: solid; font-weight: bold;} 
 
-    .text-one{font-family: 'Roboto', sans-serif;font-size: 2rem; padding: 12%; padding-left: 20%; border-style: solid;}
+    .text-one{font-family: 'Roboto', sans-serif;font-size: 2rem; padding: 12%; padding-left: 20%; border-style: solid; font-weight: bold;}
 
-    .text-price{font-family: 'Roboto', sans-serif;font-size: 2rem; grid-column-start: 1; border-style: solid; grid-column-end: 3; padding-left: 40%; padding-top: 5%;}
+    .text-price{font-family: 'Roboto', sans-serif;font-size: 2rem; grid-column-start: 1; border-style: solid; grid-column-end: 3; padding-left: 40%; padding-top: 5%; font-weight: bold;}
 
     .text-grid{font-family: 'Roboto', sans-serif; display: none;}
 
@@ -65,19 +56,20 @@ font-size: 2rem;}
     grid-column-start: 1;
     grid-column-end:4 ;
     border-style: solid;
-    font-size: 3rem;}
+    padding: 10%;
+    font-size: 5vw; letter-spacing: 20px;}
     
     .weareimd{
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;
             }
             
     
-    .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;}
+    .text-weareimd{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-size: 2vw; letter-spacing: 0px;}
     
-    .qrr{grid-column-start: 4; grid-column-end: 4;grid-row-start: 1; grid-row-end: 3; }
+    .qrr{grid-column-start: 4; grid-column-end: 4;grid-row-start: 1; grid-row-end: 4; padding-top: 15%;  border-style: solid;}
     
     .qr{width: 50%; 
-        padding-left:  20%;
+        padding-left:  25%;
         padding-top:  -3%;
         padding-bottom:  30%;
         
@@ -85,11 +77,11 @@ font-size: 2rem;}
     
     
     
-    .text-date{font-family: 'Roboto', sans-serif; font-size: 2rem; padding: 12%; padding-left: 15%; border-style: solid;}
+    .text-date{font-family: 'Roboto', sans-serif; font-size: 2vw; padding: 12%; padding-left: 20%; border-style: solid;}
     
-    .text-one{font-family: 'Roboto', sans-serif;font-size: 2rem; padding: 12%; padding-left: 20%; border-style: solid; text-align: center; padding: 12%; padding-left: 15%;}
+    .text-one{font-family: 'Roboto', sans-serif; font-size: 2vw; padding: 12%; padding-left: 20%; border-style: solid; text-align: center; padding: 12%; padding-left: 15%;}
     
-    .text-price{font-family: 'Roboto', sans-serif; font-size: 2rem; grid-column-start: 3; border-style: solid; grid-column-end: 3; padding: 12%; padding-left: 15%; text-align: center;}
+    .text-price{font-family: 'Roboto', sans-serif; font-size: 2vw; grid-column-start: 3; border-style: solid; grid-column-end: 3; padding: 12%; padding-left: 15%; text-align: center;}
     
-    .text-grid{font-family: 'Roboto', sans-serif; font-size: 2rem; grid-column-start: 1; border-style: solid; grid-column-end: 4; text-align: center;}
+    .text-grid{font-family: 'Roboto', sans-serif; font-size: 2vw; grid-column-start: 1; border-style: solid; grid-column-end: 4; text-align: center;}
     }
