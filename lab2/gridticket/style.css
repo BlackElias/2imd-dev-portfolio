@@ -9,7 +9,7 @@
         
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr ;
+        grid-template-rows: 0.5fr 1fr 0.25fr 0.25fr ;
         }
 
    .header{background-color: black; 
@@ -30,19 +30,16 @@ font-size: 2rem;}
     .qr{width: 60%; 
         padding-left:  20%;
         padding-top:  10%;
-        
-    
+        padding-bottom:  10%;
     }
     
+
     
+    .text-date{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; margin: 12%;margin-left: 35%;}
 
-  
-    
-    .text-date{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;}
+    .text-one{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 2rem;margin: 12%; margin-left: 20%;}
 
-    .text-one{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
-    .text-price{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    .text-price{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 2rem;}
 
     .text-grid{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
