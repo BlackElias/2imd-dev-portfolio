@@ -4,6 +4,15 @@ body{
     text-align: center;
    
 }
+.red{
+    background-color: rgb(230, 88, 88);
+    }
+    .yellow{
+    background-color: rgb(255, 197, 50);
+    }
+    .blue{
+        background-color: rgb(133, 221, 224);
+    }
 
 .grid-container{
 display: grid;
@@ -14,3 +23,34 @@ display: grid;
     grid-template-rows: 1fr 1fr 1fr;
    
 }
+.item1{
+
+}
+.item2{
+
+}
+.item3{
+
+}
+.item4{
+
+}
+.item5{
+
+}
+.item6{
+
+}
+.item7{
+
+}
+.item8{
+
+}
+.item9{
+
+}
+.item10{
+    
+}
+
