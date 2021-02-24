@@ -1,15 +1,15 @@
 @media only screen and (max-width: 800px) {
 
     .bg{ 
-        background-image: url("festival.jpeg");
+        background-image: url("festival.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         display: grid;
          
         
-        grid-gap: 10px;
+        
         grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 0.5fr 1fr 0.25fr 0.25fr ;
+        grid-template-rows: 0.5fr 1fr 0.20fr 0.20fr ;
         }
 
    .header{background-color: black; 
@@ -31,17 +31,18 @@ font-size: 2rem;}
         padding-left:  20%;
         padding-top:  10%;
         padding-bottom:  10%;
+        
     }
     
 
     
-    .text-date{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem; margin: 12%;margin-left: 35%;}
+    .text-date{font-family: 'Roboto', sans-serif; font-size: 2rem; padding: 12%; padding-left: 35%; border-style: solid;}
 
-    .text-one{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 2rem;margin: 12%; margin-left: 20%;}
+    .text-one{font-family: 'Roboto', sans-serif;font-size: 2rem; padding: 12%; padding-left: 20%; border-style: solid;}
 
-    .text-price{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 2rem;}
+    .text-price{font-family: 'Roboto', sans-serif;font-size: 2rem; grid-column-start: 1; border-style: solid; grid-column-end: 3; padding-left: 40%; padding-top: 5%;}
 
-    .text-grid{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    .text-grid{font-family: 'Roboto', sans-serif; display: none;}
 
     
     
