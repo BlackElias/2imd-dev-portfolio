@@ -7,13 +7,16 @@ class Note {
     createElement(title) {
       let newNote = document.createElement("li");
       newNote.addEventListener('click', this.remove.bind(newNote));
-  
+      console.log("dddd")
       return newNote;
     }
   
-    add() {
+    add(newNote) {
       // HINT🤩
       // this function should append the note to the screen somehow
+        
+        
+            
     }
   
     saveToStorage() {
@@ -36,8 +39,8 @@ class Note {
   
       // HINT🤩
       // pressing the enter key in the text field triggers the createNote function
-      // this.txtTodo = ???
-      // this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
+     this.txtTodo = document.querySelector('#taskInput');
+      this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
       // read up on .bind() -> we need to pass the current meaning of this to the eventListener
       // when the app loads, we can show previously saved noted from localstorage
       // this.loadNotesFromStorage();
@@ -49,6 +52,11 @@ class Note {
     }
   
     createNote(e) {
+        console.log(e)
+        console.log(this)
+        if (e.key == "Enter") {
+            e.preventDefault()
+        }
       // this function should create a new note by using the Note() class
       // HINT🤩
       // note.add();
@@ -58,7 +66,7 @@ class Note {
     }
   
     reset() {
-      // this function should reset the form / clear the text field
+        this.txtTodo.value = " ";
     }
   }
   
