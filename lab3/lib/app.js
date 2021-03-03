@@ -53,9 +53,8 @@ var App = /*#__PURE__*/function () {
     // pressing the enter key in the text field triggers the createNote function
 
     this.txtTodo = document.querySelector('#taskInput');
-    this.txtTodo.addEventListener("keypress", this.createNote.bind(this)); // read up on .bind() -> we need to pass the current meaning of this to the eventListener
-    // when the app loads, we can show previously saved noted from localstorage
-    // this.loadNotesFromStorage();
+    this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
+    this.loadNotesFromStorage();
   }
 
   _createClass(App, [{
@@ -73,17 +72,18 @@ var App = /*#__PURE__*/function () {
         e.preventDefault();
       } // this function should create a new note by using the Note() class
       // HINT🤩
-      // note.add();
+      //  note.add();
       // note.saveToStorage();
       // clear the text field with .reset in this class
-      // if (e.key === "Enter")
 
+
+      if (e.key === "Enter") {
+        document.getElementById("taskEntryForm").reset();
+      }
     }
   }, {
     key: "reset",
-    value: function reset() {
-      document.getElementById('#taskinput').reset();
-    }
+    value: function reset() {}
   }]);
 
   return App;
