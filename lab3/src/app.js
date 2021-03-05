@@ -30,6 +30,7 @@ class Note {
       // in this function, 'this' will refer to the current note element
       // .removeChild(this)
       // remove the item from screen and from localstorage
+      //localStorage.removeChild('this');
     }
   }
   
@@ -54,20 +55,21 @@ class Note {
         console.log(e)
         console.log(this)
         if (e.key == "Enter") {
-            e.preventDefault()
+            e.preventDefault();
+            
         }
-      // this function should create a new note by using the Note() class
-      // HINT🤩
-     //  note.add();
-      // note.saveToStorage();
-      // clear the text field with .reset in this class
-       if (e.key === "Enter"){
-        document.getElementById("taskEntryForm").reset();
-       }
+        if(this.txtTodo.value !== "") {
+          let newNote = new Note(this.txtTodo.value);
+          newNote.add();
+          newNote.saveToStorage();
+      }
+
+      this.reset();
+  }
     }
   
     reset() {
-       
+      this.txtTodo.value = " ";
     }
   }
   
