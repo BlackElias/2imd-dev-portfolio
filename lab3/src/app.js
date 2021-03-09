@@ -24,13 +24,21 @@ class Note {
      note = JSON.parse(note) || [];
 
      note.push(this.title);
-     localStorage.setItem("notes", JSON.stringify(note));
+     localStorage.setItem("note", JSON.stringify(note));
     }
   
     remove() {
       
       document.getElementById("taskList").removeChild(this);
-     
+      let value = this.innerText;
+
+        let note = localStorage.getItem("note");
+        note = JSON.parse(note) || [];
+
+        let index = note.indexOf(value);
+        note.splice(index, 1);
+
+        localStorage.setItem("notes", JSON.stringify(note));
     }
   }
   
@@ -38,8 +46,6 @@ class Note {
     constructor() {
       console.log("👊🏼 The Constructor!");
   
-      // HINT🤩
-      // pressing the enter key in the text field triggers the createNote function
      this.txtTodo = document.querySelector('#taskInput');
       this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
       
@@ -47,9 +53,16 @@ class Note {
     }
   
     loadNotesFromStorage() {
-      // HINT🤩
-      // load all notes from storage here and add them to the screen
+ 
+      let note = localStorage.getItem("note");
+      note = JSON.parse(note) || [];
+
+      for(let i = 0; i < note.length; i++) {
+          let title = note[i];
+          let newNote = new Note(title);
+          newNote.add();
     }
+  }
   
     createNote(e) {
         console.log(e)
@@ -57,7 +70,7 @@ class Note {
         if (e.key == "Enter") {
             e.preventDefault();
             
-        }
+        
         if(this.txtTodo.value !== "") {
           let newNote = new Note(this.txtTodo.value);
           newNote.add();
@@ -70,6 +83,7 @@ class Note {
   
     reset() {
       this.txtTodo.value = " ";
+      console.log(localStorage);
     }
   }
   
