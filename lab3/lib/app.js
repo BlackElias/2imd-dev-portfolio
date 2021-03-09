@@ -30,7 +30,6 @@ var Note = /*#__PURE__*/function () {
   }, {
     key: "saveToStorage",
     value: function saveToStorage() {
-      console.log(localStorage);
       var note = localStorage.getItem("note");
       note = JSON.parse(note) || [];
       note.push(this.title);
@@ -45,7 +44,7 @@ var Note = /*#__PURE__*/function () {
       note = JSON.parse(note) || [];
       var index = note.indexOf(value);
       note.splice(index, 1);
-      localStorage.setItem("notes", JSON.stringify(note));
+      localStorage.setItem("note", JSON.stringify(note));
     }
   }]);
 
@@ -96,7 +95,6 @@ var App = /*#__PURE__*/function () {
     key: "reset",
     value: function reset() {
       this.txtTodo.value = " ";
-      console.log(localStorage);
     }
   }]);
 

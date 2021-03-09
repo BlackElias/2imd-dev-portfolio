@@ -19,7 +19,7 @@ class Note {
     }
   
     saveToStorage() {
-     console.log(localStorage);
+    
      let note = localStorage.getItem("note");
      note = JSON.parse(note) || [];
 
@@ -38,7 +38,7 @@ class Note {
         let index = note.indexOf(value);
         note.splice(index, 1);
 
-        localStorage.setItem("notes", JSON.stringify(note));
+        localStorage.setItem("note", JSON.stringify(note));
     }
   }
   
@@ -83,7 +83,7 @@ class Note {
   
     reset() {
       this.txtTodo.value = " ";
-      console.log(localStorage);
+      
     }
   }
   
