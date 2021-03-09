@@ -11,10 +11,10 @@ class Note {
       return newNote;
     }
   
-    add(newNote) {
+    add() {
       // HINT🤩
       // this function should append the note to the screen somehow
-        
+      document.getElementById("taskList").appendChild(this.element);
         
             
     }
