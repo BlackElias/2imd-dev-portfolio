@@ -4,33 +4,33 @@ class Note {
        this.element = this.createElement(title);
     }
   
-    createElement(title) {
+    createElement() {
       let newNote = document.createElement("li");
       newNote.addEventListener('click', this.remove.bind(newNote));
-      console.log("dddd")
+    
       return newNote;
     }
   
     add() {
-      // HINT🤩
-      // this function should append the note to the screen somehow
+     console.log("added")
       document.getElementById("taskList").appendChild(this.element);
         
             
     }
   
     saveToStorage() {
-      // HINT🤩
-      // localStorage only supports strings, not arrays
-      // if you want to store arrays, look at JSON.parse and JSON.stringify
+     console.log(localStorage);
+     let note = localStorage.getItem("note");
+     note = JSON.parse(note) || [];
+
+     note.push(this.title);
+     localStorage.setItem("notes", JSON.stringify(note));
     }
   
     remove() {
-      // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
-      // in this function, 'this' will refer to the current note element
-      // .removeChild(this)
-      // remove the item from screen and from localstorage
-      //localStorage.removeChild('this');
+      
+      document.getElementById("taskList").removeChild(this);
+     
     }
   }
   
