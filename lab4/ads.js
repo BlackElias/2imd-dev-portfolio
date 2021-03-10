@@ -16,12 +16,27 @@ this.getWeather(lat, lng);
 });
  }
 getWeather(lat, lng){
-  let url = 'http://api.weatherstack.com/current?access_key=c32edf305c839b42e5dc85d81d0310ff&query=Zemst&units=m';
+  const params = {
+    access_key: 'c32edf305c839b42e5dc85d81d0310ff',
+    query: 'Zemst'
+  }
+  let url = `http://api.weatherstack.com/current ${params}`;
   fetch(url)
-  .then(response => response.json())
-  .then(data => console.log(data));
-  };
+  .then(response => {
+    const apiResponse = response.data;
+    let temp = apiResponse.current.temperature;
+    console.log(`Current temperature in Zemst is ${temp}℃`);
+  }).catch(error => {
+    console.log(error);
+  
 
+  //this.ad(temperature, text);
+  });
+
+//ad(temp, text );{
+
+
+}
 
 
 
