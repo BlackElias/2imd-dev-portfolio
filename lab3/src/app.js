@@ -1,11 +1,12 @@
 class Note {
     constructor(title) {
       this.title = title;
-       this.element = this.createElement(title);
+       this.element = this.createElement(this.title);
     }
   
-    createElement() {
+    createElement(title) {
       let newNote = document.createElement("li");
+      newNote.innerHTML = title;
       newNote.addEventListener('click', this.remove.bind(newNote));
     
       return newNote;
@@ -22,7 +23,6 @@ class Note {
     
      let note = localStorage.getItem("note");
      note = JSON.parse(note) || [];
-
      note.push(this.title);
      localStorage.setItem("note", JSON.stringify(note));
     }
@@ -61,6 +61,7 @@ class Note {
           let title = note[i];
           let newNote = new Note(title);
           newNote.add();
+          
     }
   }
   

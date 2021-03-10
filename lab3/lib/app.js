@@ -11,13 +11,14 @@ var Note = /*#__PURE__*/function () {
     _classCallCheck(this, Note);
 
     this.title = title;
-    this.element = this.createElement(title);
+    this.element = this.createElement(this.title);
   }
 
   _createClass(Note, [{
     key: "createElement",
-    value: function createElement() {
+    value: function createElement(title) {
       var newNote = document.createElement("li");
+      newNote.innerHTML = title;
       newNote.addEventListener('click', this.remove.bind(newNote));
       return newNote;
     }
