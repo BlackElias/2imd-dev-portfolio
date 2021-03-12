@@ -1,7 +1,7 @@
- 
+const ad_img = document.querySelector(".ad_img");
 class App {
     constructor() {
-       
+     
 	this.geo();
 }
 
@@ -27,22 +27,54 @@ getWeather(latitude, longitude){
     console.log(json)
     
     let temp = json.current.temperature;
-    console.log(`Current temperature in Zemst is ${temp}℃`);
+    const text = json.totalGames;
+    this.ad(temp);
   });
-   
-
+  //api key + cors vervangen elke 24uur
+    let url2 = `https://cors-anywhere.herokuapp.com/https://euw1.api.riotgames.com/lol/match/v4/matchlists/by-account/FrBbYC9mwbuPXn3tJ6mX-p-TZOB261ZsbmmT2-3lFmZN1zA?api_key=RGAPI-ae6fcb54-1c2c-4007-b44b-f05d5c4a975c`;
+    console.log(url2);
+    fetch(url2)
+    .then((response) => {
+      return response.json();
+      
+    }).then((json) =>{
+      console.log(json)
+      
+      
+      
+     
+  });
+  
+}
   
 
-  //this.ad(temperature, text);
+ad(temp, text){
+if(temp < 5){
   
-
-//ad(temp, text );{
-
-
+  this.coldAd(text);
+  }else{
+    this.hotAd(text);
+  }
 }
 
+coldAd( text ){
+   const ad_img = document.querySelector(".ad_img");
+   console.log(`Current text ${text}`);
+  ad_img.style.display = "inline-block";
+    document.getElementById("ad_title").innerHTML=`You played ${text} games <br> Go play some more!` ;
+ 
+    }
+ hotAd( text ){
+      const ad_img2 = document.querySelector(".ad_img2");
+     console.log(`Current text2 ${text}`);
+     ad_img2.style.display = "block";
+       document.getElementById("ad_title2").innerHTML=`You played ${text} games <br> Go outside` ;
+    
+       }
+
+  
 
 
-   
+
 }
 let app = new App();
