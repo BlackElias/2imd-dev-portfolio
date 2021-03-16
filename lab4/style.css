@@ -1,0 +1,108 @@
+.ad_logo{
+    width: 90%;
+    padding-left: 4%;
+}
+.ad_img{
+    width: 300px;
+    height: 600px;
+     display: none;
+    background-position: 50%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    
+    background-image: url("https://wallpapersplanet.net/sites/default/files/league-of-legends-wallpapers-36134-6371811.png");
+}
+.ad_title{
+    color: beige;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.ad_text{
+    color: beige;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5%;
+}
+.ad_btn {
+    color: white;
+    border: burlywood;
+    margin-left: 25%;
+    margin-top: 50%;
+    background-color: rgb(34, 49, 133);
+    width: 50%;
+    height: 10%;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition:   1s;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(26, 27, 36);
+    animation-name: up;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.ad_btn:hover {
+    color: white;
+    border: white;
+    margin-left: 25%;
+    margin-top: 50%;
+    background-color: rgb(71, 90, 194);
+    width: 50%;
+    height: 10%;
+    font-size: 1.2rem;
+    border: white ;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(26, 27, 36);
+    
+}
+
+@keyframes up {
+  0% {transform: translateY(5px);}
+  50%{transform: translateY(0px);}
+   100%{transform: translateY(5px);}
+  }
+
+  .ad_logo2{
+    width: 90%;
+    padding-left: 4%;
+}
+.ad_img2{
+    width: 300px;
+    height: 600px;
+     display: none;
+    background-position: 50%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    
+    background-image: url("https://i.pinimg.com/originals/68/6c/37/686c3732df3cc1f4a42a8fb14e0fa03f.jpg");
+}
+.ad_title2{
+    color: beige;
+    padding-top: 80%;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: up2;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.ad_text2{
+    color: beige;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+
+
+@keyframes up2 {
+  0% {transform: translateY(5px);}
+  50%{transform: translateY(0px);}
+   100%{transform: translateY(5px);}
+  }
