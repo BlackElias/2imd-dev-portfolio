@@ -27,11 +27,14 @@ getWeather(latitude, longitude){
     console.log(json)
     
     let temp = json.current.temperature;
-    const text = json.totalGames;
-    this.ad(temp);
-  });
+    
+  
+    
+
+
+
   //api key + cors vervangen elke 24uur
-    let url2 = `https://cors-anywhere.herokuapp.com/https://euw1.api.riotgames.com/lol/match/v4/matchlists/by-account/FrBbYC9mwbuPXn3tJ6mX-p-TZOB261ZsbmmT2-3lFmZN1zA?api_key=RGAPI-ae6fcb54-1c2c-4007-b44b-f05d5c4a975c`;
+    let url2 = `https://cors-anywhere.herokuapp.com/https://euw1.api.riotgames.com/lol/match/v4/matchlists/by-account/FrBbYC9mwbuPXn3tJ6mX-p-TZOB261ZsbmmT2-3lFmZN1zA?api_key=RGAPI-21540ebb-f8e3-4984-9885-e168b63c0e31`;
     console.log(url2);
     fetch(url2)
     .then((response) => {
@@ -41,21 +44,20 @@ getWeather(latitude, longitude){
       console.log(json)
       
       
-      
-     
+      let text = json.totalGames;
+    
+      if (temp < 10) {
+        this.hotAd(text);
+      }else{
+        this.coldAd(text);
+      }
+    });  
   });
   
 }
   
 
-ad(temp, text){
-if(temp < 5){
-  
-  this.coldAd(text);
-  }else{
-    this.hotAd(text);
-  }
-}
+
 
 coldAd( text ){
    const ad_img = document.querySelector(".ad_img");
