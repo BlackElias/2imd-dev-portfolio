@@ -1,10 +1,21 @@
+const getAll = (req, res) => {
+    console.log(req.params);
+    console.log(req.query.user);//it posts your name here
+    if(req.query.user){
+        const username = req.query.user;
+        res.json({
+            "message":`GETTING message for username ${username}`
+        });
+    }else{
 
-function store(req, res) {
+        res.json({
+            "message": "GETTIG messages"
+        });
+    }
+  }
 
-    res.json({
-        status: "succes",
-        message: "",
-        
-    });
-}
-module.exports.store = store;
+module.exports.getAll = getAll;
+module.exports.getId = getId;
+module.exports.post = post;
+module.exports.update = update;
+module.exports.remove = remove;
