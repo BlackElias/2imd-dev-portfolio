@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
 const prt = 3000;
-const router = require("./routers/messages");
-const routeMessages = require('./routers/messages');
+
+const routeMessages = require('./routers/api/v1/messages');
 const pug = require('pug');
